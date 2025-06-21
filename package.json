@@ -1,6 +1,6 @@
 {
   "name": "@pragyanm/temp-mail-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This MCP server lets your LLM use mailjs to create temporary email addresses and receive emails.",
   "keywords": [
     "temp-mail",
