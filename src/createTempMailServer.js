@@ -77,11 +77,6 @@ export default async function createTempMailServer(server) {
     const toolName = request.params.name;
     const args = request.params.arguments;
 
-    // console.log(`Received request to call tool: ${toolName}`, input);
-    writeToFile(
-      "Tool name: " + toolName + "\n Arguments: " + JSON.stringify(args) + "\n"
-    );
-
     if (schemaFnMap.has(toolName)) {
       const fn = schemaFnMap.get(toolName);
 

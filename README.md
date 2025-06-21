@@ -1,3 +1,8 @@
+
+<img src="assets/mailtm.png" alt="mail.tm logo" height="150"/>
+
+
+
 # 📧 Temporary Email MCP Server
 
 > MCP server integrating with [mail.tm](https://mail.tm) API to provide temporary email capabilities for LLM agents, create, register, and recieve emails in a temporary email address through your chat.

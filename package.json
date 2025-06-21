@@ -1,16 +1,7 @@
 {
-  "name": "temp-mail-mcp-server",
-  "version": "1.0.0",
+  "name": "@pragyanm/temp-mail-mcp-server",
+  "version": "1.0.1",
   "description": "This MCP server lets your LLM use mailjs to create temporary email addresses and receive emails.",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pragyanmehrotra/temp-mail-mcp-server.git"
-  },
   "keywords": [
     "temp-mail",
     "mcp-server",
@@ -19,16 +10,29 @@
     "modelcontextprotocol",
     "mailjs"
   ],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+  "homepage": "https://github.com/pragyanmehrotra/temp-mail-mcp-server#readme",
   "bugs": {
     "url": "https://github.com/pragyanmehrotra/temp-mail-mcp-server/issues"
   },
-  "homepage": "https://github.com/pragyanmehrotra/temp-mail-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragyanmehrotra/temp-mail-mcp-server.git"
+  },
+  "license": "ISC",
+  "author": "Pragyan Mehrotra",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "temp-mail-mcp-server": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@cemalgnlts/mailjs": "^3.1.0",
     "@modelcontextprotocol/sdk": "^1.13.0",
     "zod": "^3.25.67"
-  }
+  },
+  "devDependencies": {}
 }
