@@ -44,7 +44,7 @@ To use this mcp server simply add the following config to your mcp client:
 {
     "temp-mail-mcp-server": {
         "command": "npx",
-        "args": ["tbd"],
+        "args": ["@pragyanm/temp-mail-mcp-server@latest"],
     }
 }
 ```
