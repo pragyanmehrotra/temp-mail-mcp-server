@@ -28,20 +28,32 @@ function getMessageSchema() {
     inputSchema: {
       type: "object",
       properties: {
+        token: {
+          type: "string",
+          description:
+            "JWT token for authentication, if you dont have it get it by logging in",
+        },
         messageId: {
           type: "string",
           description: "ID of the message to fetch",
         },
       },
-      required: ["messageId"],
+      required: ["token", "messageId"],
     },
   };
 }
 
-async function getMessage(mailjs, messageId) {
+async function getMessage(mailjs, { token, messageId }) {
   try {
-    const response = await mailjs.getMessage(messageId);
-    return response.data;
+    const url = `https://api.mail.tm/messages/${messageId}`;
+
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return await response.json();
   } catch (error) {
     return {
       error: "Error fetching message",
