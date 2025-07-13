@@ -1,25 +1,20 @@
-
 <img src="assets/mailtm.png" alt="mail.tm logo" height="150"/>
-
-
 
 # 📧 Temporary Email MCP Server
 
 > MCP server integrating with [mail.tm](https://mail.tm) API to provide temporary email capabilities for LLM agents, create, register, and recieve emails in a temporary email address through your chat.
 
-
-
-
-
 ## Features
 
 ### Account Management
+
 - 🆕 Create a random temporary email account
 - 📝 Register accounts with a custom name of your choosing
 - 🔑 Login to existing accounts
 - 👤 Fetch logged-in user information
 
 ### Email Operations
+
 - 📬 Retrieve all messages for an account
 - 📩 Fetch specific messages by ID
 
@@ -49,13 +44,23 @@ To use this mcp server simply add the following config to your mcp client:
 }
 ```
 
+## Video Demo
+
+<video width="640" height="360" controls>
+  <source src="tempmailmcprec.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+}
 
 ## Technical Notes
+
 Uses the [mailjs](https://www.npmjs.com/package/@cemalgnlts/mailjs) npm package
 
 Responses follow mail.tm API schema
 
 ## Contact
+
 [Pragyan Mehrotra](mailto:mehrotrapragyan@gmail.com)
 
 Powered by [mail.tm](https://mail.tm) temporary email service
