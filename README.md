@@ -18,12 +18,9 @@
 - 📬 Retrieve all messages for an account
 - 📩 Fetch specific messages by ID
 
-## Video Demo
+## Demo
 
-<video width="640" height="360" controls>
-  <source src="assets/mailjs_mcp_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Demo Animation](assets/demo.gif)
 
 ## MCP Tools Exposed
 
